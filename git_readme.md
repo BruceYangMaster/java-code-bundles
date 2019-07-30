@@ -12,3 +12,11 @@ git rm -r --cached .
 git add .
 git commit -m 'update .gitignore'
 ```
+```
+其中-r是删除文件夹及其子目录
+--cached是删除暂存区里的文件而不删除工作区里的文件，
+```
+##### 查看git下的文件 
+ - git ls-files
+ 
+ 
