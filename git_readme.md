@@ -17,6 +17,32 @@ git commit -m 'update .gitignore'
 --cached是删除暂存区里的文件而不删除工作区里的文件，
 ```
 ##### 查看git下的文件 
- - git ls-files
- 
- 
+ ```git ls-files```
+##### 添加远程仓库
+ ```
+$ git remote  
+    origin  
+
+$ git remote add pb https://github.com/paulboone/ticgit
+
+$ git remote -v
+pb      https://github.com/bruceyangjie/java-code-bundles.git (fetch)
+pb      https://github.com/bruceyangjie/java-code-bundles.git (push)
+
+```
+
+…or create a new repository on the command line
+
+``` 
+    echo "# java-code-bundles" >> README.md
+    git init
+    git add README.md
+    git commit -m "first commit"
+    git remote add origin git@github.com:bruceyangjie/java-code-bundles.git
+    git push -u origin master
+```
+…or push an existing repository from the command line
+```
+   git remote add origin git@github.com:bruceyangjie/java-code-bundles.git
+   git push -u origin master
+```
